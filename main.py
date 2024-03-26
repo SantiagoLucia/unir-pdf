@@ -14,7 +14,7 @@ def unir_pdf(lista_pdf: tuple) -> None:
     resultado = filedialog.asksaveasfilename(
         defaultextension="pdf",
         confirmoverwrite=True,
-        filetypes=[('PDF files', '*.pdf')],
+        filetypes=[("PDF files", "*.pdf")],
         initialdir=Path.home() / "Escritorio",
         )
     
@@ -28,7 +28,7 @@ def unir_pdf(lista_pdf: tuple) -> None:
  
 def main() -> None:
     filenames = filedialog.askopenfilenames(
-        filetypes=[('PDF files', '*.pdf')],
+        filetypes=[("PDF files", "*.pdf")],
         initialdir=Path.home() / "Downloads"                 
         )
     if filenames:
